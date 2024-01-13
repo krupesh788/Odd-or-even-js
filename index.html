@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <h1>Check Odd or Even Number</h1>
-    
-    Enter a number to check if it's odd or even:
+    <div class="container">
 
-    <br>
-    <br>
+        <h1>Check Odd or Even Number</h1>
+        <br>
+        <br>
 
-    <input type="text"  id="num">
+        Enter a number to check if it's odd or even:
 
-    <button onclick ="oddEven()">Check</button>
+        <br>
+        <br>
 
-    <p id="p1"></p>
+        <input type="text" id="num">
 
+        <button class="btn" onclick="oddEven()">Check</button>
 
-    <script>
+        <br>
+        <br>
 
-        function oddEven(){
+        <p id="p1"></p>
 
-            let num = parseInt(document.getElementById("num").value);
+    </div>
 
+    <script src="js/script.js"></script>
 
-            if(num % 2 == 0 ){
-
-                document.getElementById("p1").innerHTML = `${num} is Even. `;
-            }
-
-            else{
-
-                document.getElementById("p1").innerHTML = `${num} is Odd. `;
-
-            }
-        }
-
-
-
-    </script>
-    
 </body>
+
 </html>
